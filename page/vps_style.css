@@ -11,7 +11,7 @@
   --tow: #3490de;
   --boxshadow: rgb(0 0 0 / 10%);
   --theborder: rgba(54, 57, 60, 0.1);
-  --button-order: #673de6 ;
+  --button-order: #673de6;
 }
 
 body {
@@ -65,7 +65,11 @@ body {
 }
 #headers a:hover::before {
   transform: scaleX(1);
-}
+} 
+ .span {
+  display: none;
+ }
+
 
 #container {
   width: 100%;
@@ -142,7 +146,6 @@ body {
 .span3:hover::after {
   transform: scaleY(1);
 }
-
 
 .features {
   display: grid;
@@ -269,6 +272,11 @@ body {
 .plan3:hover {
   box-shadow: 0 2px 15px 0 rgb(0 0 0 / 15%);
 }
+
+.label {
+  display: none;
+}
+
 #domain {
   background-color: #fafbff;
   height: 350px;
@@ -643,12 +651,22 @@ body {
 .nav3 a {
   text-decoration: none;
 }
+.by {
+  text-align: center;
+  background-color: #2d2e47;
+  color: #fff;
+}
+.by a {
+  color: #fff;
+  font-weight: 600;
 
+}
 @media screen And (max-width: 768px) {
   .span {
     position: absolute;
-    top: 34px;
+    top: 25px;
     left: 2%;
+    cursor:pointer;
   }
   .spans {
     margin-top: 2px;
@@ -707,6 +725,7 @@ body {
   }
   .mob {
     transform: translateY(0);
+    height:0;
   }
 
   #reviews {
@@ -718,40 +737,13 @@ body {
 }
 
 @media screen And (max-width: 900px) {
-  .span {
-    position: absolute;
-    top: 34px;
-    left: 2%;
-    cursor: pointer;
-  }
-  .spans {
-    margin-top: 2px;
-    display: block;
-    width: 20px;
-    height: 4px;
-    background-color: black;
-    border-radius: 3px;
-  }
+  
 
+.span {
+  display: block;
+}
 
   /* spnas cheak */
- 
-   .spans:first-child:active {
-    transform: translate(-2px ,-2px) rotate(45deg);
-
-   } 
-   .spans:nth-child(2) {
-    transform: translateX(15px);
-    transition: 200ms ease-in-out;
-    background-color: #d4d4d4;
-   
-   }
-  .spans:nth-child(3):checked {
-    transform: translate(-2px,-14px) rotate(-45deg);
-  }
-
-
-/* spnas cheak */
 
   .Awesomediv1,
   .Awesomediv2,
@@ -1027,6 +1019,16 @@ body {
   margin-top: 20px;
   box-shadow: 0 2px 15px 0 var(--boxshadow);
   text-transform: uppercase;
+  opacity: 0.05;
+}
+
+@keyframes vpsplans {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
 }
 
 .vpsplans1::before {
@@ -1092,7 +1094,6 @@ body {
   border-radius: 5px;
   align-items: center;
   box-shadow: 0 0px 2px 2px var(--boxshadow);
-
 }
 
 /* features */
@@ -1112,6 +1113,15 @@ body {
   margin-top: 80px;
   justify-content: center;
 }
+@keyframes features {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 .features-sngle {
   flex: 0 0 30%;
   background-color: #fff;
@@ -1153,87 +1163,90 @@ body {
   margin-top: 100px;
 }
 .mapsh3 {
-    text-align: center;
+  text-align: center;
 }
-
-
 
 /* reviews vps */
 #reviews_vps {
-    margin-top: 150px;
+  margin-top: 150px;
+  opacity: 0;
 }
 
+@keyframes reviewsVps {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 
 /* footer */
 #isfooter {
-    width: 100%;
-    padding-bottom: 60px;
-background-color: #2d2e47;
-box-shadow: 0px -2px 6px 2px var(--boxshadow);
+  width: 100%;
+  padding-bottom: 60px;
+  background-color: #2d2e47;
+  box-shadow: 0px -2px 6px 2px var(--boxshadow);
 }
 .footers-vps {
-    display: flex;
-    width: 100%;
- 
+  display: flex;
+  width: 100%;
 }
 .h2vpsfooter {
-      color: #fff; 
-      margin-right: 2%; 
+  color: #fff;
+  margin-right: 2%;
 }
 
-.nav1-vps , .nav2-vps  , .nav3-vps {
-flex: 0  0 auto;
-width: 33%;
-margin-top: 2%;
+.nav1-vps,
+.nav2-vps,
+.nav3-vps {
+  flex: 0 0 auto;
+  width: 33%;
+  margin-top: 2%;
 }
-.nav1-vps  {
-    padding-right: 2%;
+.nav1-vps {
+  padding-right: 2%;
 }
 
-
-.nav1-vps > p  , .nav2-vps > p {
-    color: #fff;
-    
-    }
-.nav1-vps > ul , .nav2-vps > ul , .nav3-vps > ul {
-    list-style: none;
-    
-    }
-    .nav1-vps a ,  .nav2-vps  a {
-        color: #fff;
-        text-decoration: none;
-        }
-
+.nav1-vps > p,
+.nav2-vps > p {
+  color: #fff;
+}
+.nav1-vps > ul,
+.nav2-vps > ul,
+.nav3-vps > ul {
+  list-style: none;
+}
+.nav1-vps a,
+.nav2-vps a {
+  color: #fff;
+  text-decoration: none;
+}
 
 .nav3-vps {
-    width: auto;
+  width: auto;
 }
 
 .nav3-vps > ul {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    color: #fff;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  color: #fff;
 }
 
 .so {
-    color: #fff;
+  color: #fff;
 }
 @media screen And (max-width: 1081px) {
   #vps-price {
     gap: 0;
   }
-  
+
   .vpsplans1,
   .vpsplans2,
   .vpsplans3 {
     flex: 0 0 100%;
-   
   }
-
-
-
-
 }
 @media screen And (max-width: 767px) {
   #features {
@@ -1258,78 +1271,175 @@ margin-top: 2%;
   }
 }
 
-@media screen and (max-width: 500px )
-{
+@media screen and (max-width: 500px) {
 
+  /* transition menu and close */
+  .ri-2x {
+    transition: 1s ease;
+  }
   #features {
     margin-left: 0%;
     margin-right: 0%;
     gap: 5px;
-   
   }
   .features-sngle {
     min-width: 90%;
   }
   .nav2-vps {
     width: auto;
-  margin-right: 90px;
-}
+    margin-right: 90px;
+  }
   .nav3-vps {
     width: auto;
-  margin-right: auto;
-  margin-left: auto;
-
-}
-
-.nav1-vps , .nav2-vps  {
-  display: block;
-  flex: 0  0 100%;
-  width: 100%;
-  margin-top: 2%;
-  }
-.nav3-vps > ul {
-color: #fff;
-justify-content: space-around;
-gap: 20%;
-}
-
-.nav3-vps li {
-
-}
-.nav1-vps li, .nav2-vps li {
-  margin-top: 2%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
+  .nav1-vps,
+  .nav2-vps {
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+    margin-top: 2%;
+  }
+  .nav3-vps > ul {
+    color: #fff;
+    justify-content: space-around;
+    gap: 20%;
+  }
 
-.h2vpsfooter {
-  margin-right: 0;
-  text-align: center;
-}
+  .nav3-vps li {
+  }
+  .nav1-vps li,
+  .nav2-vps li {
+    margin-top: 2%;
+  }
 
-.footers-vps {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  text-align: center;
-  gap: 30px;
-}
-.nav2-vps {
-  width: auto;
-  margin-right: 0;
-}
-.nav1-vps {
-  padding-right: 0;
-  
-}
-#wolecom .btn {
-  grid-template-columns:  1fr;
+  .h2vpsfooter {
+    margin-right: 0;
+    text-align: center;
+  }
 
-}
-.features-sngle {
-  min-height: 251px;
-}
-#map {
-  width: 100%;
+  .footers-vps {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+  }
+  .nav2-vps {
+    width: auto;
+    margin-right: 0;
+  }
+  .nav1-vps {
+    padding-right: 0;
+  }
+  #wolecom .btn {
+    grid-template-columns: 1fr;
+  }
+  .features-sngle {
+    min-height: 251px;
+  }
+  #map {
+    width: 100%;
+  }
 
-}
+  /* vps price moblie 500px */
+  #vps-price {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 3px;
+    margin-right: 3px;
+    gap: 20px;
+    width: 99%;
+    overflow: hidden;
+    position: relative;
+    height: 512px;
+  }
+
+  .vpsplans1 {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 2px 15px 0 var(--boxshadow);
+    text-transform: uppercase;
+    opacity: 1;
+    position: absolute;
+    transform: translateX(0%);
+    width: 100%;
+    transition: ease 500ms;
+  }
+
+  .vpsplans2 {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 2px 15px 0 var(--boxshadow);
+    text-transform: uppercase;
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-100%);
+    width: 100%;
+    transition: ease 500ms;
+  }
+
+  .vpsplans3 {
+    flex: 0 0 100%;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 2px 15px 0 var(--boxshadow);
+    text-transform: uppercase;
+    opacity: 1;
+    position: absolute;
+    transform: translateX(-100%);
+    width: 100%;
+
+    transition: ease 500ms;
+  }
+
+  .label {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    background-color: #fafbff;
+    border: 1px solid rgb(0 0 0 / 10%);
+    margin-left: 1%;
+    margin-right: 1%;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+
+  .label1 {
+    background-color: #3490de;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: ease 500ms;
+  }
+  .label2 {
+    background-color: #e0e0e0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: ease 500ms;
+  }
+
+  .label3 {
+    background-color: #e0e0e0;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: ease 500ms;
+  }
 }
