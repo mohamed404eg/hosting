@@ -120,7 +120,6 @@ body {
 }
 
 .contactsAvFlex {
-  width: 90%;
   margin: 0 auto;
   border: 1px solid rgba(54, 57, 60, 0.1);
   box-shadow: 0 4px 8px rgb(81 85 88 / 10%);
@@ -166,12 +165,11 @@ body {
 }
 
 #contactLive {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid rgba(54, 57, 60, 0.1);
   box-shadow: 0 4px 8px rgb(81 85 88 / 10%);
   border-radius: 5px;
-  padding: 20px;
   padding-top: 10px;
   margin-bottom: 10px;
 }
@@ -202,7 +200,7 @@ body {
   background-color: rgba(141, 141, 141, 0.1);
 }
 
-#contactLive input:nth-child(7) {
+#contactLive input:nth-child(8) {
   height: 200px;
 }
 #contactLive input:nth-child(7)::placeholder {
@@ -226,6 +224,11 @@ body {
 }
 
 @media screen And (max-width: 500px) {
+  .mob {
+    left: 2px; 
+     position: relative;
+}
+ 
   #contactsAll {
     display: block;
     padding-top: 100px;

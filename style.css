@@ -29,6 +29,17 @@ body {
   justify-content: space-around;
 }
 
+.login {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
+  background-color: #3490de;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
 .h1head {
   position: relative;
   color: #728fce;
@@ -54,6 +65,7 @@ body {
 .navhid2 a {
   text-decoration: none;
   position: relative;
+ color: #551A8b;
 }
 .uls_social_media {
   transform: scale(0);
@@ -676,9 +688,10 @@ body {
   margin-top: 9px;
   list-style: none;
 }
-.nav1 p {
+.nav1 p , .nav2 p,.nav3 p{
   color: #2f1c6a;
   font-size: 20px;
+  font-weight: 700;
 }
 .nav2 {
   position: absolute;
@@ -709,7 +722,9 @@ body {
 }
 .nav3 a {
   text-decoration: none;
+  color: #2f1c6a;
 }
+
 .label {
   display: none;
 }
@@ -889,7 +904,7 @@ body {
   .Awesomediv4,
   .Awesomediv5,
   .Awesomediv6 {
-    flex: 0 0 100%;
+    flex: 0 0 99%;
     max-width: 99%;
   }
 
@@ -993,7 +1008,7 @@ body {
   .Awesomediv4,
   .Awesomediv5,
   .Awesomediv6 {
-    flex: 0 0 100%;
+    flex: 0 0 99%;
     max-width: 100%;
   }
 
