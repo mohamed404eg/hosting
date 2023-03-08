@@ -27,6 +27,12 @@ body {
     box-shadow: 0 4px 10px rgb(0 0 0 / 10%);
     z-index: 1;
   }
+  .mob {
+    background-color: #fff;
+    position: absolute;
+    left: 5px;
+  }
+
   
   .h1head {
     position: absolute;
@@ -270,6 +276,8 @@ margin-right: 5px;
   .mob {
     transform: translateY(0);
     background-color: #fff;
+    position: relative;
+    left: 5px;
   }
 
 .span {
