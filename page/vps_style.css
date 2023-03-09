@@ -28,6 +28,17 @@ body {
   z-index: 1;
 }
 
+.login {
+  width: 100px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px 0 rgb(0 0 0 / 10%);
+  background-color: #3490de;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
 .h1head {
   position: absolute;
   right: 20px;
