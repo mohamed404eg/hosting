@@ -1,3 +1,13 @@
 {
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "workbench.activityBar.iconClickBehavior": "toggle",
+  "workbench.editor.decorations.colors": true,
+  "workbench.sideBar.location": "right",
+  "workbench.statusBar.visible": true,
+  "workbench.tips.enabled": true,
+  "workbench.tree.expandMode": "doubleClick",
+  "workbench.view.alwaysShowHeaderActions": true,
+  "breadcrumbs.showConstants": true,
+  "breadcrumbs.symbolPath": "on",
+  "files.autoSave": "off"
 }
