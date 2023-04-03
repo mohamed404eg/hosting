@@ -9,5 +9,5 @@
   "workbench.view.alwaysShowHeaderActions": true,
   "breadcrumbs.showConstants": true,
   "breadcrumbs.symbolPath": "on",
-  "files.autoSave": "off"
+  "files.autoSave": "afterDelay"
 }

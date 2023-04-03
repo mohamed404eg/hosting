@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> تسجيل الدخول   </title>
-    <link rel="stylesheet" href="login.css">
-</head>
-<body>
-    <h1> اسضافة بالون عربي  </h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="login.css" />
+    <!-- axios -->
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <h1>اسضافة بالون عربي</h1>
     <div id="divcenter">
+      <section id="login">
+        <h2>تسجيل الدخول إلى حساب اسضافة بالون عربي</h2>
 
+        <form id="formLogin">
+          <label for="email" class="labelEmail">الايميل</label>
+          <input
+            class="emali"
+            type="email"
+            value="eve.holt@reqres.in"
+            required
+          />
+          <label for="email" class="labelPss"> الباسورد </label>
+          <input class="password" type="password" value="cityslicka" required />
+          <p class="response"></p>
+          <button type="button" class="sgin" onclick="loginFu()">تسجيل</button>
 
-    
-    <section id="login">
-<h2> تسجيل الدخول إلى حساب اسضافة بالون عربي </h2>
+          <a class="forgotPssORname" href="#"> نسيت كلمة المرور؟ </a>
 
-        <form action="" id="formLogin">
-
-            <label for="email" class="labelEmail">الايميل</label>
-            <input class="emali" type="email">
-            <label for="email" class="labelPss"> الباسورد </label>
-<input class="password" type="password">
-
-
-<button class="sgin">تسجيل</button>
-
-<a class="forgotPssORname" href="#"> نسيت كلمة المرور؟ </a>
-
-
-<p>
-    ألست عضوا إلى الآن؟ <a class="upto" href=""> اختر خطة استضافة </a> وابدأ الآن!
-
-</p>
-
+          <p>
+            ألست عضوا إلى الآن؟
+            <a class="upto" href=""> اختر خطة استضافة </a> وابدأ الآن!
+          </p>
         </form>
-    </section>
-</div>
+      </section>
+    </div>
 
     <script src="login.js"></script>
-</body>
+  </body>
 </html>
