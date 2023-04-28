@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sdfdsfs",
+  "info": {
+    "singularName": "sdfdsf",
+    "pluralName": "sdfdsfs",
+    "displayName": "sdfdsf"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dfgfd": {
+      "type": "text"
+    }
+  }
+}

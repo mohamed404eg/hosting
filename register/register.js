@@ -1,14 +1,16 @@
 // responsein html
 let responsePage = document.querySelector(".response");
-const urlApi = "http://localhost:1337/api/auth/local/";
 
+const urlApi = "http://localhost:1337/api/auth/local/register";
 function loginFu() {
-  let identifier = document.querySelector("input[type='email']");
+  let username = document.querySelector(".username");
+  let email = document.querySelector("input[type='email']");
   let pass = document.querySelector("input[type='password']");
 
   axios
     .post(urlApi, {
-      identifier: `${identifier.value}`,
+      username: `${username.value}`,
+      email: `${email.value}`,
       password: `${pass.value}`,
     })
 
@@ -22,12 +24,13 @@ function loginFu() {
     .catch((error) => {
       // Received the error
       responsePage.innerHTML = "";
-       console.log(error.response.data.error.message)
-       
-       // append error to webPage
-       responsePage.style.color = "red";
-      let responseError = error.response.data.error.message;
-      responsePage.innerHTML = responseError;
-  
+      let responseError = error.response.data.error.details.errors;
+      // console.log(error.response.data.error.details.errors)
+      // append error to webPage
+      for (oneError of responseError) {
+        responsePage.style.color = "red";
+        responsePage.innerHTML += " | " + oneError.message;
+        //console.log(oneError.message)
+      }
     });
 }

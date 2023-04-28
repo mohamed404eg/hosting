@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="register.css" />
+  <!-- axios -->
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
+  <!-- git hub -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <h1>اسضافة بالون عربي</h1>
+  <div id="divcenter">
+    <section id="login">
+      <h2>تسجيل مستخدم جديد</h2>
+
+      <form id="formLogin">
+        <label for="username" class="labelEmail"> اسم المستخدم </label>
+        <input class="username" type="username" value="" required  placeholder=" اسم المستخدم "/>
+
+        <label for="email" class="labelEmail"> الايميل </label>
+        <input class="emali" type="email" value="" required  placeholder=" الايميل "/>
+
+
+        <label for="email" class="labelPss"> الباسورد </label>
+        <input class="password" type="password" value="" required placeholder=" الباسورد " />
+        <p class="response"></p>
+        <button type="button" class="sgin" onclick="loginFu()">تسجيل</button>
+
+        <a class="forgotPssORname" href="#"> نسيت كلمة المرور؟ </a>
+
+        <p>
+          هل انت عضوا بالفعل 
+          <a class="upto" href="">  تسجيل دخول ! </a> 
+        </p>
+      </form>
+    </section>
+  </div>
+
+  <script src="register.js"></script>
+</body>
+
+</html>

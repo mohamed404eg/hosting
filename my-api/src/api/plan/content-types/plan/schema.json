@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plans",
+  "info": {
+    "singularName": "plan",
+    "pluralName": "plans",
+    "displayName": "PLAN",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "PLANname": {
+      "type": "text",
+      "required": true
+    },
+    "SSD": {
+      "type": "string",
+      "required": true
+    },
+    "visits_per_month": {
+      "type": "string"
+    }
+  }
+}

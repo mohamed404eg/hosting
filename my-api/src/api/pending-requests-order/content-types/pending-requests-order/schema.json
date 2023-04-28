@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pending_requests_orders",
+  "info": {
+    "singularName": "pending-requests-order",
+    "pluralName": "pending-requests-orders",
+    "displayName": "Pending_requests_order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Shared": {
+      "type": "enumeration",
+      "enum": [
+        "Shared-1",
+        "Shared-2",
+        "Shared-3"
+      ],
+      "required": true
+    },
+    "own": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "pending_requests_orders"
+    }
+  }
+}
