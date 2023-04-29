@@ -1,3 +1,10 @@
+// library
+
+
+// library \\
+
+
+
 // header 
 // click to close and close
 const span2 = document.querySelector(".span");
@@ -154,23 +161,26 @@ function ADANFU5() {
 }
 
 // button buy now (class pan-pay-1 pan-pay-2) => animation
-
-let panAN1 = document.querySelector(".pan-pay-1");
-window.addEventListener("scroll", panAN_FU1);
-function panAN_FU1() {
-  if (window.scrollY >= panAN1.offsetTop - 500) {
-    panAN1.style.cssText = "animation: AnRight 700ms;";
+function ButtonBuyNow() {
+   
+  let panAN1 = document.querySelector(".pan-pay-1");
+  window.addEventListener("scroll", panAN_FU1);
+  function panAN_FU1() {
+    if (window.scrollY >= panAN1.offsetTop - 500) {
+      panAN1.style.cssText = "animation: AnRight 700ms;";
+    }
   }
-}
-
-let panAN2 = document.querySelector(".pan-pay-2");
-window.addEventListener("scroll", panAN_FU);
-function panAN_FU() {
-  if (window.scrollY >= panAN1.offsetTop - 500) {
-    panAN2.style.cssText = "animation: AnLeft 700ms;";
+  
+  let panAN2 = document.querySelector(".pan-pay-2");
+  window.addEventListener("scroll", panAN_FU);
+  function panAN_FU() {
+    if (window.scrollY >= panAN1.offsetTop - 500) {
+      panAN2.style.cssText = "animation: AnLeft 700ms;";
+    }
   }
+  
 }
-
+ButtonBuyNow()
 
 // reviews => animation
 
@@ -185,5 +195,68 @@ function reviewsFU() {
     }
   }
 }
+
+
+
+
+
+
+
+function Ui() {
+
+  if (localStorage.getItem("user")) {
+    // change login
+    let Btnlogin = document.querySelector(".Btnlogin")
+  
+    Btnlogin.innerHTML = " لوحة التحكم "
+    Btnlogin.href = "./ControlPanel.html"
+
+   
+ 
+    
+  } else {
+ 
+    
+  }
+
+}
+
+Ui() 
+
+
+
+
+
+
+function addCrat(idProdect , This) {
+  let check = localStorage.getItem("cartShared");
+  if (check == null) {
+    //console.log("1")
+    localStorage.setItem("cartShared", `["${idProdect}"]`)
+   
+  } else {
+   // console.log("2")
+    let get = localStorage.getItem("cartShared");
+    let to = JSON.parse(get)
+   // console.log(to)
+    to.push(`${idProdect}`)
+    let un = JSON.stringify(to)
+    localStorage.setItem("cartShared", un)
+  }
+
+  This.innerHTML = " تابع عملية الشراء "
+
+
+  setTimeout(() => {
+    This.innerHTML = " شراء الان "
+  }, 5000)
+
+
+
+
+}
+
+
+
 
 

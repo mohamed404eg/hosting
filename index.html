@@ -17,6 +17,10 @@
       rel="stylesheet"
     />
     <!-- https://www.onlydomains.com/ -->
+
+
+  
+
   </head>
   <body>
       <!-- headers -->
@@ -29,16 +33,23 @@
      
 
             <!--mob-->
-        <div>
+        <div class="mobDiv">
             <nav class="mob">
                 <ul class="uls">
                     <li><a href="/index.html">الاستضافة المشتركة</a></li>
                     <li><a href="./dedicated-server-hosting.html">خوادم  المخصصة</a></li>
                     <li><a href="./vps.html">استضافة VPS السحابية </a></li>
+                    <li>
+
+                      <a href="./login/login.html" class="Btnlogin"> تسجيل دخول  </a>
+                    </li>
+                    
                 </ul>
             </nav>
 
         </div>
+
+        
     </header>
 
 <!-- headers -->
@@ -67,7 +78,7 @@
           ><i class="ri-git-repository-private-line ri-2x"></i> أمان الموقع
         </span>
         <div>
-          <a href="www.google.com">
+          <a href="#price">
             <button class="btn_sab">اشترك معنا الآن</button>
           </a>
         </div>
@@ -92,7 +103,7 @@
           <span class="price-in-plan"
             ><span class="price-in-plan2">1</span>$/الشهر</span
           >
-          <a><button class="btn-payplan">شراء الان</button></a>
+          <a href="./checkout.html"><button class="btn-payplan" onclick="addCrat(1 , this)">شراء الان</button></a>
           <span>قرص SSD سعة 10GB</span>
           <span>‎~25 000 زيارة شهريًا</span>
           <span>بريد إلكتروني مجاني</span>
@@ -122,7 +133,7 @@
           <span class="price-in-plan"
             ><span class="price-in-plan2">3</span>$/الشهر</span
           >
-          <a><button class="btn-payplan">شراء الان</button></a>
+          <a href="./checkout.html"><button class="btn-payplan" onclick="addCrat(2 ,this)">شراء الان</button></a>
           <span>قرص SSD سعة 20GB</span>
           <span>‎~45 000 زيارة شهريًا</span>
           <span>بريد إلكتروني مجاني</span>
@@ -152,7 +163,7 @@
           <span class="price-in-plan"
             ><span class="price-in-plan2">3</span>$/الشهر</span
           >
-          <a><button class="btn-payplan">شراء الان</button></a>
+          <a href="./checkout.html"><button class="btn-payplan" onclick="addCrat(3 ,this)">شراء الان</button></a>
           <span>قرص SSD سعة 30GB</span>
           <span>‎~65 000 زيارة شهريًا</span>
           <span>بريد إلكتروني مجاني</span>
@@ -312,8 +323,11 @@
     <footer>
       <div class="footers">
         <h1 class="h2head">اسضافة بالون عربي</h1>
-        <nav class="nav1">
-          <p>خدماتنا</p>
+        <!-- all nav footer -->
+        <div class="allNavFooter">
+          
+          <nav class="nav1">
+            <p>خدماتنا</p>
           <ul>
             <li>
               <a href="./page/dedicated-server-hosting.html">خوادم المخصصة</a>
@@ -345,6 +359,8 @@
             <li><a href="./blog.html">مدونة</a></li>
           </ul>
         </nav>
+      </div>
+        <!-- all nav footer -->
       </div>
     </footer>
     <div class="by">

@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@500;700;800;1000&display=swap");
+* {
+  font-family: "Cairo", sans-serif;
+
+  scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --tow: #3490de;
+  --boxshadow: rgb(0 0 0 / 10%);
+  --theborder: rgba(54, 57, 60, 0.1);
+  --button-order: #673de6;
+}
+
+body {
+  direction: rtl;
+}
+
+
+.container {
+    padding-left:10px;
+    padding-right: 10px;
+}
+
+.H1 {
+color: #2f1c6a;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* crat order */
+.order {
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+.plan {
+    text-align: center;
+    color: #2f1c6a;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: 1px solid #d5dfff;
+    border-radius: 15px;
+  }
+  .plan span {
+    padding: 5px;
+  }
+  .planh2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  #price {
+    display: flex;
+    background-color: #fff;
+    gap: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .price-in-plan {
+    font-size: 25px;
+  }
+  
+  .price-in-plan2 {
+    color: #2f1c6a;
+    font-size: 35px;
+  }
+  
+
+  .delete {
+    color: rgb(255, 94, 94);
+    box-sizing: var(--boxshadow);
+    cursor: pointer;
+  }
+
+  /* Bill */
+  .Bill {
+   border: 1px solid #d5dfff;
+   box-sizing: var(--boxshadow);
+   border-radius: 5px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+
+  }
+
+  .singleOrder {
+    display: flex;
+    justify-content: space-around;
+  }
+  .name-price {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #d5dfff;
+    
+  }
+  .Divtotal {
+    display: flex;
+    justify-content: space-around;
+    color: #1D1E20;
+  }
+  
+
+  .pay_order {
+    display: flex;justify-content: center;
+    padding-bottom: 10px;
+  }
+  .btn_sab {
+    width: 30%;
+    text-align: center;
+    color: #fff;
+    background-color: #673de6;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+    box-shadow: rgb(0, 0, 0 / 10%);
+    cursor: pointer;
+ margin-right: auto;
+ margin-left: auto;
+  }
+  
+
+  @media screen And (max-width: 720px) { 
+    .all {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }}
+
+  @media screen And (max-width: 500px) { 
+    .all {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .order {
+        display: grid;
+        background-color: #fff;
+        grid-template-columns:  1fr;
+        gap: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+    
+
+      }
+
+
+  }

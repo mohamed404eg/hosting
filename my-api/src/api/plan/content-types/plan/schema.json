@@ -26,6 +26,66 @@
     },
     "visits_per_month": {
       "type": "string"
+    },
+    "Mail": {
+      "type": "string",
+      "default": "بريد إلكتروني مجاني"
+    },
+    "SSL": {
+      "type": "string",
+      "default": "SSL مجاني غير محدود"
+    },
+    "FreeDomain": {
+      "type": "string",
+      "default": "دومين مجاني (بقيمة $9.99)"
+    },
+    "Bandwidth": {
+      "type": "string",
+      "default": "كمية نقل البيانات غير محدودة"
+    },
+    "WordPress": {
+      "type": "string",
+      "default": "ووردبريس مُدار"
+    },
+    "Databases": {
+      "type": "string",
+      "default": "قواعد بيانات غير محدودة"
+    },
+    "dns": {
+      "type": "string",
+      "default": "إدارة DNS"
+    },
+    "Websites": {
+      "type": "string",
+      "default": "300 موقع"
+    },
+    "ftp": {
+      "type": "string",
+      "default": "حسابات FTP غير محدودة"
+    },
+    "subdomain": {
+      "type": "string",
+      "default": "300 دومينات فرعية"
+    },
+    "Uptime": {
+      "type": "string",
+      "default": "ضمان وقت التشغيل 99,90%"
+    },
+    "suppport": {
+      "type": "string",
+      "default": "دعم 24/7"
+    },
+    "Cloudflare": {
+      "type": "string",
+      "default": "خوادم الأسماء محمية بـCloudflare"
+    },
+    "backups": {
+      "type": "string",
+      "default": "نسخ احتياطية أسبوعية"
+    },
+    "move": {
+      "type": "string",
+      "default": "أداة التشغيل المرحلي لووردبريس"
     }
   }
 }

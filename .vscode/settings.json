@@ -9,5 +9,6 @@
   "workbench.view.alwaysShowHeaderActions": true,
   "breadcrumbs.showConstants": true,
   "breadcrumbs.symbolPath": "on",
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "cSpell.words": ["getdeitlas"]
 }
