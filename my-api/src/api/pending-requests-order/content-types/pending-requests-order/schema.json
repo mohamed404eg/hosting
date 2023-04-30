@@ -26,6 +26,15 @@
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "pending_requests_orders"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "في انتضار التاكيد",
+        "في انتضار الدفع",
+        "تم الدفع"
+      ],
+      "default": "في انتضار التاكيد"
     }
   }
 }
